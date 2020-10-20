@@ -1,0 +1,14 @@
+<section class="post-wrapper">
+    <mat-card class="example-card" fxLayout="column" fxLayoutAlign="center center" *ngIf="currentPost">
+        <mat-card-actions class="action-wrapper">
+            <button class="mat-button primary-btn" routerLink="/edit-post/{{currentPost.id}}">Edit</button>
+            <button class="mat-button secondary-btn" (click)="deletePost()">Delete</button>
+        </mat-card-actions>
+        <mat-card-header class="title">
+            <h1>{{currentPost.title}}</h1>
+        </mat-card-header>
+        <mat-card-content class="content">
+            <p>{{currentPost.content}}</p>
+        </mat-card-content>
+    </mat-card>
+</section>

@@ -1,0 +1,43 @@
+.example-card {
+    width: 65%;
+    margin: 50px auto;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: $white;
+    align-items: flex-start !important;
+    .action-wrapper {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: flex-end;
+        .mat-button {
+            margin-left: 20px;
+            cursor: pointer;
+            &.primary-btn {
+                color: $white;
+                background: $blue;
+                &:hover {
+                    background: lighten($blue, 10);
+                }
+            }
+            &.secondary-btn {
+                background: $yellow;
+                &:hover {
+                    background: lighten($yellow, 10);
+                }
+            }
+        }
+    }
+    .title {
+        width: 80%;
+        h1 {
+            color: $blue;
+        }
+    }
+    .content {
+        width: 80%;
+        .text-area {
+            height: 500px;
+        }
+    }
+}

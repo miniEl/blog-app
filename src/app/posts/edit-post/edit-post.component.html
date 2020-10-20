@@ -1,0 +1,18 @@
+<section class="post-wrapper">
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()" *ngIf="currentPost">
+        <mat-card class="example-card" fxLayout="column" fxLayoutAlign="center center">
+            <mat-card-actions class="action-wrapper">
+                <button type="submit" class="mat-button primary-btn" [disabled]="submitForm.invalid">Save</button>
+                <button class="mat-button secondary-btn" routerLink="/view-post/{{currentPost.id}}">Cancel</button>
+            </mat-card-actions>
+            <mat-form-field appearance="outline" class="title">
+                <mat-label>Title</mat-label>
+                <input type="text" formControlName="title" matInput>
+                <mat-error>Title must not be empty.</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="content">
+                <textarea type="text" formControlName="content" class="text-area" matInput></textarea>
+            </mat-form-field>
+        </mat-card>
+    </form>
+</section>

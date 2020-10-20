@@ -1,0 +1,19 @@
+<section class="cards-wrapper" fxLayoutAlign="center center">
+    <mat-card class="example-card" *ngFor="let post of postList; let i = index" [class.active]="i == currentIndex">
+        <mat-card-header routerLink="/view-post/{{post.id}}">
+            <mat-card-title>{{post.title}}</mat-card-title>
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+            <p>{{post.content | slice: 0:150}} ...</p>
+            <a routerLink="/view-post/{{post.id}}">Read more..</a>
+        </mat-card-content>
+        <mat-card-actions>
+            <!-- <button mat-button routerLink="/edit-post/{{post.id}}">Edit</button> -->
+            <!-- <button mat-button (click)="setActivePost(post, i)" routerLink="/edit-post">Edit</button> -->
+            <!-- <span class="material-icons edit-btn" (click)="editPost()">create</span> -->
+            <span class="material-icons edit-btn" routerLink="/edit-post/{{post.id}}">create</span>
+            <span class="material-icons delete-btn" (click)="deletePost(post.id)">delete</span>
+        </mat-card-actions>
+    </mat-card>
+</section>

@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .post-wrapper {
+        .example-card {
+            width: 100% !important;
+            align-items: center !important;
+            .title,
+            .content {
+                width: 100%;
+            }
+            .mat-button {
+                width: 50%;
+            }
+        }
+    }
+}

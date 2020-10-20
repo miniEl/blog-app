@@ -1,0 +1,39 @@
+@import "../../_files/variables";
+mat-toolbar {
+    background: $blue !important;
+}
+
+.navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lg-menu {
+    height: 100%;
+    >ul {
+        line-height: 3;
+        >li {
+            padding: 0 10px;
+            cursor: pointer;
+            &:hover,
+            &:active {
+                background: $yellow;
+            }
+        }
+    }
+}
+
+a {
+    color: $white;
+    font-weight: normal;
+    text-decoration: none;
+    &#site-name {
+        color: $yellow;
+        font-weight: bold;
+        font-size: larger;
+        &:hover {
+            color: lighten($yellow, 15);
+        }
+    }
+}

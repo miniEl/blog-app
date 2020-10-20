@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <div><a id="site-name" routerLink="/posts">THE BLOG</a></div>
+    <div id="lg-menu" fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+            <li><a routerLink="/posts">Posts</a></li>
+            <li><a routerLink="/create-post">New Post</a></li>
+        </ul>
+    </div>
+    <div id="sm-menu" fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
