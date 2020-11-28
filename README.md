@@ -17,3 +17,6 @@ To install and run the application:
 * start the json server with `json-server src/app/_files/articles.json`.
 * Navigate to `http://localhost:4200/` in your browser.
 
+## Dependencies
+
+- REST API using [jason-server](https://www.npmjs.com/package/json-server).
