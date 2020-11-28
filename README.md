@@ -19,4 +19,4 @@ To install and run the application:
 
 ## Dependencies
 
-- REST API using [jason-server](https://www.npmjs.com/package/json-server).
+* REST API using [jason-server](https://www.npmjs.com/package/json-server).
